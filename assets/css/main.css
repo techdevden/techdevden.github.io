@@ -3654,7 +3654,14 @@ input, select, textarea {
 			}
 
 			#sidebar nav > ul > li > ul#sidebar-socials > li > a {
-				color: #18187c;
+				color: #a0b2ba;
+				text-decoration: none;
+				font-size: 1em;
+				width:0%;
+			}
+
+			#sidebar nav > ul > li > ul#sidebar-socials > li > a:hover {
+				color:#18187c;
 			}
 
 			#sidebar nav > ul > li > h3#sidebar-socials-title {
@@ -3956,6 +3963,10 @@ input, select, textarea {
 							background-color: #18187c;
 						}
 
+						#sidebar nav > ul > li#social-media-list {
+							display: none;
+						}
+
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3972,6 +3983,9 @@ input, select, textarea {
 				display: none;
 			}
 
+			#sidebar nav > ul > li#social-media-list {
+				display: none;
+			}
 		}
 
 /* Intro */
@@ -4022,44 +4036,46 @@ input, select, textarea {
 
 		}
 
-/* Font Icons */
-@font-face {
-	font-family: 'icomoon';
-	src:  url('/assets/webfonts/icomoon.eot?bj1m1f');
-	src:  url('/assets/webfonts/icomoon.eot?bj1m1f#iefix') format('embedded-opentype'),
-	  url('/assets/webfonts/icomoon.ttf?bj1m1f') format('truetype'),
-	  url('/assets/webfonts/icomoon.woff?bj1m1f') format('woff'),
-	  url('/assets/webfonts/icomoon.svg?bj1m1f#icomoon') format('svg');
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
-  }
-  
-  [class^="icon-"], [class*=" icon-"] {
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'icomoon' !important;
-	speak: never;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-  
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-github:before {
-	content: "\e900";
-  }
-  .icon-twitter:before {
-	content: "\e901";
-  }
-  .icon-facebook:before {
-	content: "\ea90";
-  }
-  .icon-instagram:before {
-	content: "\ea92";
-  }
-  
+
+		@font-face {
+			font-family: 'social-media';
+			src:  url('../webfonts/social-media.eot?h1uabo');
+			src:  url('../webfonts/social-media.eot?h1uabo#iefix') format('embedded-opentype'),
+			  url('../webfonts/social-media.ttf?h1uabo') format('truetype'),
+			  url('../webfonts/social-media.woff?h1uabo') format('woff'),
+			  url('../webfonts/social-media.svg?h1uabo#social-media') format('svg');
+			font-weight: normal;
+			font-style: normal;
+			font-display: block;
+		  }
+		  
+		  [class^="icon-"], [class*=" icon-"] {
+			/* use !important to prevent issues with browser extensions that change fonts */
+			font-family: 'social-media' !important;
+			speak: never;
+			font-style: normal;
+			font-weight: normal;
+			font-variant: normal;
+			text-transform: none;
+			line-height: 1;
+		  
+			/* Better Font Rendering =========== */
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		  }
+		  
+		  .icon-github:before {
+			content: "\e900";
+		  }
+		  .icon-twitter:before {
+			content: "\e901";
+		  }
+		  .icon-facebook:before {
+			content: "\ea90";
+		  }
+		  .icon-instagram:before {
+			content: "\ea92";
+		  }
+		  .icon-linkedin:before {
+			content: "\eac9";
+		  }
