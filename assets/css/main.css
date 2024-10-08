@@ -184,6 +184,7 @@ input, select, textarea {
 
 	.blue-title {
 		color: #18187c;
+		text-align: center;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -2830,6 +2831,7 @@ input, select, textarea {
 		ul.contact > li {
 			padding: 0;
 			margin: 1.5em 0 0 0;
+			color: #ffffff;
 		}
 
 			ul.contact > li:first-child {
@@ -3008,6 +3010,14 @@ input, select, textarea {
 					padding-top: 0;
 				}
 
+				ul.contact > li {
+					color: #18187c;
+				}
+
+				ul.contact > li > h3 {
+					color: #18187c;
+				}
+			
 		}
 
 		@media screen and (max-width: 736px) {
@@ -3120,7 +3130,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .content {
-				padding: 4em 4em 2em 4em ;
+				padding: 4em 4em 3.5em 4em ;
 			}
 
 		}
@@ -3151,7 +3161,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 			.spotlights > section > .content {
-				padding: 3em 2em 1em 2em ;
+				padding: 3em 2em 3.5em 2em ;
 			}
 
 		}
@@ -3485,6 +3495,12 @@ input, select, textarea {
 				padding: 1em 2em;
 			}
 
+			.features section .programming-icons {
+				position: absolute;
+				left: 0.7em;
+				top: 1.2em;
+			}
+
 		}
 
 		@media screen and (max-width: 480px) {
@@ -3514,6 +3530,15 @@ input, select, textarea {
 							line-height: 6em;
 						}
 
+
+			.features section .programming-icons {
+				display: none;
+			}
+
+			.features section .programming-title-icons {
+				visibility: visible;
+				font-size: 1.3em;
+			}
 		}
 
 /* Wrapper (main) */
@@ -3608,6 +3633,10 @@ input, select, textarea {
 		margin: 0 auto;
 	}
 
+	.programming-title-icons {
+		visibility: hidden;
+	}
+
 /* Sidebar */
 
 	#sidebar {
@@ -3678,6 +3707,10 @@ input, select, textarea {
 		#sidebar nav > ul {
 			list-style: none;
 			padding: 0;
+		}
+
+		#sidebar nav > ul > li#secondary-contact {
+			display: none;
 		}
 
 			#sidebar nav > ul > li {
@@ -3967,6 +4000,14 @@ input, select, textarea {
 				display: inline;
 			}
 
+			#sidebar nav > ul > li#primary-contact {
+				display: none;
+			}
+
+			#sidebar nav > ul > li#secondary-contact {
+				display: inline-block;
+			}	
+
 				#sidebar > .inner {
 					-moz-flex-direction: row;
 					-webkit-flex-direction: row;
@@ -4090,6 +4131,9 @@ input, select, textarea {
 				background-attachment: scroll;
 			}
 
+			#outro {
+				background-attachment: scroll;
+			}
 		}
 
 		/* Custom font */
