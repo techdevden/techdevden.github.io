@@ -3990,6 +3990,7 @@ input, select, textarea {
 				padding: 0;
 				width: 2.5em;
 				margin-top: 0.5em;
+				margin-right: 2em;
 			}
 
 			#sidebar > .inner > #logo-placeholder > a#primary-logo {
@@ -4024,7 +4025,6 @@ input, select, textarea {
 				#sidebar nav {
 					height: inherit;
 					line-height: inherit;
-					margin-left: 2em;
 				}
 
 					#sidebar nav ul {
